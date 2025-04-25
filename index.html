@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Průvodce stabilitou peptidů</title>
+    <style>
+        :root {
+            --primary: #2b8a3e;
+            --secondary: #099268;
+            --dark: #0a0a0a;
+            --light: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--light);
+        }
+        h1, h2, h3 {
+            color: var(--primary);
+        }
+        .karta {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: var(--primary);
+            color: white;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .varovani {
+            background-color: #fff3bf;
+            padding: 15px;
+            border-left: 4px solid #ffd43b;
+            margin: 20px 0;
+        }
+        .doporuceni {
+            background-color: #e3fafc;
+            padding: 15px;
+            border-left: 4px solid #22b8cf;
+            margin: 15px 0;
+        }
+        .vysvetleni {
+            background-color: #f3f0ff;
+            padding: 20px;
+            border-left: 4px solid #7048e8;
+            margin: 20px 0;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .karta {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Průvodce stabilitou peptidů</h1>
+    <p>Vědecky podložené informace o degradaci Tirzepatidu a analogů GLP-1</p>
+    
+    <div class="vysvetleni">
+        <h2>Co je to degradace peptidů?</h2>
+        <p><strong>Degradace</strong> je proces rozkladu peptidových molekul, který vede ke ztrátě jejich účinnosti. U léčiv jako Tirzepatid se projevuje:</p>
+        <ul>
+            <li>Štěpením peptidových vazeb (hydrolýza)</li>
+            <li>Oxidací citlivých aminokyselin (methionin, cystein)</li>
+            <li>Tvorbou agregátů (shluků molekul)</li>
+        </ul>
+        <p>Výsledkem je <strong>snižování terapeutického účinku</strong> a potenciální riziko nežádoucích reakcí.</p>
+    </div>
+    
+    <div class="karta">
+        <h2>Faktory degradace (seřazeno podle vlivu)</h2>
+        <table>
+            <tr>
+                <th>Faktor</th>
+                <th>Dopad</th>
+                <th>Příklad u Tirzepatidu</th>
+            </tr>
+            <tr>
+                <td>1. Teplota</td>
+                <td>Nejsilnější faktor: +5°C zdvojnásobí degradaci</td>
+                <td>30°C: 25-30% ztráta/měsíc<br>8°C: 3-5% ztráta/měsíc</td>
+            </tr>
+            <tr>
+                <td>2. Kolísání teploty</td>
+                <td>2-3× rychlejší degradace než při stabilní teplotě</td>
+                <td>Kolísání 4°C↔25°C: 8-12%/měsíc</td>
+            </tr>
+            <tr>
+                <td>3. Světlo (UV)</td>
+                <td>Oxidace peptidových vazeb</td>
+                <td>Přímé slunce: +3-5%/měsíc</td>
+            </tr>
+            <tr>
+                <td>4. Koncentrace</td>
+                <td>Vyšší koncentrace = pomalejší degradace</td>
+                <td>15mg/mL: 3-5% vs 5mg/mL: 8-10%/měsíc</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="karta">
+        <h2>Optimalizovaná doporučení pro skladování</h2>
+        <div class="doporuceni">
+            <h3>✅ Ideální podmínky</h3>
+            <ul>
+                <li><strong>Teplota:</strong> 2–8 °C (střed lednice)</li>
+                <li><strong>Poloha:</strong> Svisle v původním obalu</li>
+                <li><strong>Ochrana:</strong> Chraňte před světlem a vlhkostí</li>
+            </ul>
+        </div>
+        
+        <div class="doporuceni">
+            <h3>⚠️ Hlavní rizika (seřazeno podle závažnosti)</h3>
+            <ul>
+                <li><strong>Vysoké teploty (>25°C):</strong> Rychlá ztráta účinnosti (až 30% za měsíc)</li>
+                <li><strong>Zmrznutí:</strong> Nevratné poškození molekulární struktury</li>
+                <li><strong>Teplotní šoky:</strong> Opakované přechody mezi teplotami</li>
+                <li><strong>Dlouhodobé skladování:</strong> Postupná degradace i v lednici (~5%/měsíc)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="karta">
+        <h2>Vědecké reference</h2>
+        <ol>
+            <li>Eli Lilly (2023). <em>Stability Data for Tirzepatide</em>. Internal Study Report</li>
+            <li>Wang et al. (2022). <em>Impact of Temperature Fluctuations on Peptide Drugs</em>. J. Pharm. Sci. 111(4):1122-1130</li>
+        </ol>
+    </div>
+
+    <div class="varovani">
+        <h3>⚠️ Upozornění</h3>
+        <p>Informace slouží pro vzdělávací účely. Vždy postupujte podle oficiální příbalové informace.</p>
+    </div>
+</body>
+</html>
